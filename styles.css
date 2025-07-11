@@ -914,26 +914,18 @@ body {
 
 
 .footer-bottom {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background: var(--text-dark);
+    color: white;
     padding: 1.5rem 0;
-    margin-top: 2rem;
-    border-top: 1px solid #333;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 .footer-bottom-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    text-align: center;
     max-width: 1200px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
