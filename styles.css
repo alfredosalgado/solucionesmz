@@ -425,6 +425,114 @@ body {
     background: linear-gradient(135deg, #1ea97c, var(--secondary-color));
 }
 
+/* Additional Services Section */
+.additional-services {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.services-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.category-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-card.featured {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    text-align: center;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.category-card.featured .category-header {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+    flex-direction: column;
+    text-align: center;
+}
+
+.category-header i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    background: rgba(74, 144, 226, 0.1);
+    padding: 1rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-card.featured .category-header i {
+    color: white;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.category-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: var(--text-dark);
+}
+
+.category-card.featured .category-header h3 {
+    color: white;
+    margin-top: 1rem;
+}
+
+.category-services {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-services li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f1f3f4;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--text-color);
+}
+
+.category-services li:last-child {
+    border-bottom: none;
+}
+
+.category-services li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.category-card.featured p {
+    margin: 1.5rem 0;
+    opacity: 0.9;
+}
+
 /* Stats Section */
 .stats {
     background: var(--primary-color);
@@ -1251,10 +1359,32 @@ body {
     }
     
     .services,
+    .additional-services,
     .about,
     .testimonials,
     .contact {
         padding: 60px 0;
+    }
+    
+    .services-categories {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .category-card {
+        padding: 1.5rem;
+    }
+    
+    .category-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+    
+    .category-header i {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
     }
     
     .service-card,
