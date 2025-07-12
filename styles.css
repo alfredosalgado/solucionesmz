@@ -1634,3 +1634,42 @@ html {
 .contact-method:hover {
     border-left: 4px solid var(--secondary-color);
 }
+
+/* ========================================
+   Mejoras de Accesibilidad SEO (WCAG)
+   ======================================== */
+
+/* Estilos para el enlace skip-link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 1000;
+    transition: top 0.3s;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* Mejoras de foco para accesibilidad */
+:focus {
+    outline: 2px solid #005fcc;
+    outline-offset: 2px;
+}
+
+/* Respeto por las preferencias de movimiento reducido */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
