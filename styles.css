@@ -171,7 +171,10 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--bg-light) 0%, #EDF2F7 100%);
+    background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(237, 242, 247, 0.9) 100%), url('assets/img/heroPC.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 220px 0 80px;
     min-height: 100vh;
     display: flex;
@@ -278,6 +281,20 @@ body {
     height: auto;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow-lg);
+}
+
+/* Ocultar hero-image en vista móvil */
+@media (max-width: 768px) {
+    .hero {
+        background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(237, 242, 247, 0.9) 100%), url('assets/img/heroMOVIL.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .hero-image {
+        display: none;
+    }
 }
 
 /* Scroll Arrow */
@@ -918,9 +935,11 @@ body {
 }
 
 .footer-logo img {
-    height: 50px;
+    height: 150px;
     width: auto;
     object-fit: contain;
+    border-radius: 15px;
+    transition: all 0.3s ease;
 }
 
 .footer-section p {
@@ -1317,6 +1336,11 @@ body {
         justify-content: center;
     }
     
+    .footer-logo img {
+        height: 120px;
+        border-radius: 12px;
+    }
+    
     /* Centrar elementos del footer-bottom en móvil */
     .footer-bottom-content {
         text-align: center !important;
@@ -1387,6 +1411,11 @@ body {
         width: 50px;
         height: 50px;
         font-size: 1.5rem;
+    }
+    
+    .footer-logo img {
+        height: 220px;
+        border-radius: 10px;
     }
     
     .service-card,
