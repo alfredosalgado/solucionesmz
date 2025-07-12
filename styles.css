@@ -1248,6 +1248,21 @@ body {
         display: flex;
     }
     
+    .nav-logo img {
+        content: url('assets/img/logonavmovil.png');
+        height: 120px;
+        width: auto;
+        object-fit: contain;
+    }
+    
+    .nav-container {
+        height: 140px;
+    }
+    
+    .hero {
+        padding: 180px 0 80px;
+    }
+    
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
