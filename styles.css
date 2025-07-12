@@ -171,7 +171,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(237, 242, 247, 0.9) 100%), url('assets/img/heroPC.png');
+    background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(237, 242, 247, 0.9) 100%), url('assets/img/heroPC.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -286,7 +286,7 @@ body {
 /* Ocultar hero-image en vista móvil */
 @media (max-width: 768px) {
     .hero {
-        background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(237, 242, 247, 0.9) 100%), url('assets/img/heroMOVIL.png');
+        background: linear-gradient(135deg, rgba(248, 250, 252, 0.9) 0%, rgba(237, 242, 247, 0.9) 100%), url('assets/img/heroMOVIL.jpg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
