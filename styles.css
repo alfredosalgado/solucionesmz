@@ -83,7 +83,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: 170px;
 }
 
 .nav-logo {
@@ -95,9 +95,10 @@ body {
     color: var(--primary-color);
 }
 
-.nav-logo i {
-    font-size: 1.8rem;
-    color: var(--secondary-color);
+.nav-logo img {
+    height: 190px;
+    width: auto;
+    object-fit: contain;
 }
 
 .nav-menu {
@@ -171,7 +172,7 @@ body {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, var(--bg-light) 0%, #EDF2F7 100%);
-    padding: 120px 0 80px;
+    padding: 220px 0 80px;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -916,9 +917,10 @@ body {
     color: white;
 }
 
-.footer-logo i {
-    color: var(--accent-color);
-    font-size: 2rem;
+.footer-logo img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .footer-section p {
